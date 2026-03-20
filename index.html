@@ -941,15 +941,38 @@ td:not(:first-child) { text-align: right; }
             <div class="di-title">Part 1 — Workspace &amp; Package</div>
             <div class="di-sub">Install ROS 2 · Create your first workspace</div>
           </div>
-          <span class="di-badge">New</span>
         </a>
-        <a class="dropdown-item" href="https://rossimplified.substack.com/p/ros-2-tutorial-part-3-sub-part-1" target="_blank">
+        <a class="dropdown-item" href="https://medium.com/@satyarthshree45/ros-2-tutorial-for-beginners-part-2-creating-your-first-node-c33e92d54b5c" target="_blank">
+          <span class="di-icon">🔧</span>
+          <div class="di-text">
+            <div class="di-title">Part 2 — Creating Your First Node</div>
+            <div class="di-sub">Write &amp; run your first ROS 2 node</div>
+          </div>
+          <span class="di-badge">Medium ↗</span>
+        </a>
+        <a class="dropdown-item" href="https://medium.com/@satyarthshree45/ros-2-tutorial-for-beginners-part-3-understanding-ros-2-nodes-sub-part-1-20d47f6793ef" target="_blank">
           <span class="di-icon">🤖</span>
           <div class="di-text">
-            <div class="di-title">Part 3 — Understanding Nodes</div>
+            <div class="di-title">Part 3 Sub Part 1 — Understanding Nodes</div>
             <div class="di-sub">Run, inspect &amp; experiment with nodes</div>
           </div>
+          <span class="di-badge">Medium ↗</span>
+        </a>
+        <a class="dropdown-item" href="https://rossimplified.substack.com/p/ros-2-tutorial-for-beginners-part?r=61m4w1" target="_blank">
+          <span class="di-icon">🔬</span>
+          <div class="di-text">
+            <div class="di-title">Part 3 Sub Part 2 — Nodes Deep Dive</div>
+            <div class="di-sub">Custom nodes &amp; deeper node insights</div>
+          </div>
           <span class="di-badge">Substack ↗</span>
+        </a>
+        <a class="dropdown-item" href="https://medium.com/@satyarthshree45/ros2-tutorial-for-beginners-part-4-understanding-rclpy-spin-and-creating-a-class-based-node-511c124f55c0" target="_blank">
+          <span class="di-icon">⚙️</span>
+          <div class="di-text">
+            <div class="di-title">Part 4 — rclpy.spin() &amp; Class-Based Nodes</div>
+            <div class="di-sub">Understanding spin &amp; OOP node structure</div>
+          </div>
+          <span class="di-badge">Medium ↗</span>
         </a>
         <a class="dropdown-item" href="https://rossimplified.substack.com" target="_blank">
           <span class="di-icon">📬</span>
@@ -1025,7 +1048,7 @@ td:not(:first-child) { text-align: right; }
     </div>
     <div class="id-card accent-gold">
       <div class="id-label">Custom Email</div>
-      <div class="id-value mono"><a href="mailto:contact@satyarthshree.com">contact@satyarthshree.com</a></div>
+      <div class="id-value mono" id="emailCell"></div>
       <div class="id-sub">Professional identity from day one of engineering school</div>
     </div>
     <div class="id-card">
@@ -1223,6 +1246,13 @@ td:not(:first-child) { text-align: right; }
 </div>
 
 <script>
+// Email written via JS to prevent Cloudflare obfuscation
+(function() {
+  const u = 'contact', d = 'satyarthshree.com';
+  const el = document.getElementById('emailCell');
+  if (el) el.innerHTML = '<a href="mailto:' + u + '@' + d + '">' + u + '@' + d + '</a>';
+})();
+
 function toggleMenu() {
   const menu = document.getElementById('tutorialsMenu');
   menu.classList.toggle('open');
@@ -1311,7 +1341,6 @@ data.forEach((d, i) => {
   `;
   tbody.appendChild(tr);
 });
-
 </script>
 </body>
 </html>

@@ -1306,4 +1306,13 @@ data.forEach((d, i) => {
   tr.innerHTML = `
     <td><span class="month-cell ${d.partial ? 'partial' : ''}">${d.month}${d.partial ? ' ✦' : ''}</span></td>
     <td>${d.views.toLocaleString()}<span class="inline-bar" style="width:${bw}px;background:var(--ink)"></span></td>
-    <td>${d.reads.toL
+    <td>${d.reads.toLocaleString()}<span class="inline-bar" style="width:${brw}px;background:var(--accent)"></span></td>
+    <td>${ratio}%</td>
+    <td>${momHtml}</td>
+  `;
+  tbody.appendChild(tr);
+});
+
+</script>
+</body>
+</html>
